@@ -55,7 +55,13 @@ We use Docker Compose to orchestrate the entire platform locally.
 - Node.js 20.x (for local UI dev if not using Docker)
 - Python 3.12 (for local backend dev)
 
-### 1. Clone & Configure
+### 🚀 Quick Start (Windows)
+For Windows users, we have provided simple batch scripts to automatically start and stop all services.
+
+1. **Start the Platform:** Double-click `start.bat` from the project root. This will boot up the Docker infrastructure and open separate terminal windows for the API Gateway, AI Engine, Notification Service, and Frontend.
+2. **Stop the Platform:** Double-click `stop.bat` to gracefully spin down the infrastructure.
+
+### 1. Clone & Configure (Manual Setup)
 ```bash
 git clone https://github.com/yourusername/callguard-ai.git
 cd callguard-ai
