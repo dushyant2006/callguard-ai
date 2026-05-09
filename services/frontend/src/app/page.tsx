@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Bell, ShieldAlert, Activity, CheckCircle, ShieldCheck, Server, XCircle, Search } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { LineChart, Line, ResponsiveContainer, XAxis, YAxis, Tooltip, AreaChart, Area } from "recharts";
+import { ResponsiveContainer, XAxis, YAxis, Tooltip, AreaChart, Area } from "recharts";
 
 const data = [
   { time: "08:00", risk: 10 },
@@ -18,7 +18,7 @@ const data = [
 ];
 
 export default function Dashboard() {
-  const [alerts, setAlerts] = useState([
+  const [alerts] = useState([
     { id: 1, phone: "+1 (555) 019-2834", risk: 95, type: "Scam", reason: "IRS Gift Card pattern detected." },
     { id: 2, phone: "+1 (555) 012-9981", risk: 88, type: "Phishing", reason: "Bank account credential request." },
   ]);

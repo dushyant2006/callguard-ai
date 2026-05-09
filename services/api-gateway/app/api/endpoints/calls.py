@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, BackgroundTasks
+from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from app.db.session import get_db
 from pydantic import BaseModel
@@ -17,7 +17,7 @@ def ingest_call(payload: CallIngestSchema, db: Session = Depends(get_db)):
     # 3. Publish event to Kafka for AI processing
     
     # Placeholder for Kafka producer
-    event = {
+    _event = {
         "event_type": "call_ingested",
         "phone_number": payload.phone_number,
         "transcript": payload.transcript

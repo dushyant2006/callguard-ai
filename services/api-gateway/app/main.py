@@ -1,6 +1,5 @@
-from fastapi import FastAPI, Depends, HTTPException, status
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from sqlalchemy.orm import Session
 from app.db.session import engine, Base
 from app.core.config import settings
 from app.api.endpoints import auth, calls
