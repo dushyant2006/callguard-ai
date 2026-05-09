@@ -1,0 +1,17 @@
+# These owners will be the default reviewers for pull requests in these directories
+
+*       @callguard-ai-admin
+
+# Backend Services
+/services/api-gateway/ @backend-team
+/services/notifications/ @backend-team
+
+# AI Engine
+/services/ai-engine/ @ai-team
+
+# Frontend
+/services/frontend/ @frontend-team
+
+# DevOps & Infra
+/infra/ @devops-team
+/.github/ @devops-team
